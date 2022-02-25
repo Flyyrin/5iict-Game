@@ -10,6 +10,16 @@
 </head>
 <body>
     <style>
+        @font-face {
+        font-family: gameFont;
+        src: url(font.otf);
+        }
+        .title {
+            font-family: gameFont;
+            color: transparent;
+            font-size: 10rem;
+            -webkit-text-stroke: 10px #9f302e;
+        }
         html {
             height: 100%
         }
@@ -44,9 +54,102 @@
             
             backdrop-filter: blur(5px);
         }
+
+        ::selection {
+        background: transparent;
+        }
+
+        h1 span {
+        font-family: gameFont;
+        color: transparent;
+        font-size: 10rem;
+        -webkit-text-stroke: 10px #9f302e;
+        position: relative;
+        display: inline-block;
+        -webkit-animation: bounce 0.3s ease infinite alternate;
+        color: #fff;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+            0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+            0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 span:nth-child(2) {
+        -webkit-animation-delay: 0.1s;
+        }
+
+        h1 span:nth-child(3) {
+        -webkit-animation-delay: 0.2s;
+        }
+
+        h1 span:nth-child(4) {
+        -webkit-animation-delay: 0.3s;
+        }
+
+        h1 span:nth-child(5) {
+        -webkit-animation-delay: 0.4s;
+        }
+
+        h1 span:nth-child(6) {
+        -webkit-animation-delay: 0.5s;
+        }
+
+        h1 span:nth-child(7) {
+        -webkit-animation-delay: 0.6s;
+        }
+
+        h1 span:nth-child(8) {
+        -webkit-animation-delay: 0.2s;
+        }
+
+        h1 span:nth-child(9) {
+        -webkit-animation-delay: 0.3s;
+        }
+
+        h1 span:nth-child(10) {
+        -webkit-animation-delay: 0.4s;
+        }
+
+        h1 span:nth-child(11) {
+        -webkit-animation-delay: 0.5s;
+        }
+
+        h1 span:nth-child(12) {
+        -webkit-animation-delay: 0.6s;
+        }
+
+        h1 span:nth-child(13) {
+        -webkit-animation-delay: 0.7s;
+        }
+
+        h1 span:nth-child(14) {
+        -webkit-animation-delay: 0.8s;
+        }
+
+        /* ANIMATION */
+        @-webkit-keyframes bounce {
+        100% {
+            top: -20px;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+            0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+            0 50px 25px rgba(0, 0, 0, 0.2);
+        }
+        }
+
     </style>
     <div class="jumbotron text-center blur">
-        <h1 class="display-3">5 IICT Game</h1>
+        
+        <h1 class="display-3 title"><h1>
+            <span>5</span>
+            <span>i</span>
+            <span>i</span>
+            <span>c</span>
+            <span>t</span>
+            <span></span>
+            <span>g</span>
+            <span>a</span>
+            <span>m</span>
+            <span>e</span>
+          </h1></h1>
         <p class="lead"><strong>Download Onze Game hier!</strong> Wij zijn niet verantwoordelijk voor veel speel plezier.</p>
         <hr>
         <p class="lead">

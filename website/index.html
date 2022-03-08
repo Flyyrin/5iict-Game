@@ -35,7 +35,7 @@
 }
 
 #element4:hover #preview {
-  position: absolute;
+  position: fixed;
   height: 50%;
   width: auto;
   left: 50%;
@@ -50,7 +50,7 @@
   text-decoration: none;
   font-size: 18px;
   color: black;
-  display: block
+  display: block;
 }
 
 #myUL li a:hover:not(.header) {
@@ -95,6 +95,7 @@ Http.onreadystatechange = (e) => {
           var img = document.createElement("img");
           img.setAttribute("src", f.imageUrl);
           img.setAttribute("id", "preview");
+          img.setAttribute("loading", ";lazy");
           li.appendChild(document.createTextNode(f.firtName + " " + f.lastName + " " + f.klas + " " + f.school));
           li.setAttribute("id", "element4");
           li.appendChild(img);
